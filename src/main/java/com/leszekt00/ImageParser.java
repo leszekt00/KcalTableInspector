@@ -39,7 +39,7 @@ public class ImageParser {// given a loaded image parse its contents into variab
                 .append(System.lineSeparator());
         ITesseract instance = new Tesseract();  // JNA Interface Mapping
         // ITesseract instance = new Tesseract1(); // JNA Direct Mapping
-        instance.setDatapath("Tess4j/tessdata"); // path to tessdata directory
+        instance.setDatapath("resources/tessdata"); // path to tessdata directory
 
         try {
             result.append(instance.doOCR(im));
